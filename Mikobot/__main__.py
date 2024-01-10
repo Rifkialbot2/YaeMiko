@@ -249,7 +249,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 parse_mode=ParseMode.MARKDOWN,
             )
             await asyncio.sleep(0.2)
-            guu = await update.effective_message.reply_text("🐾")
+            guu = await update.effective_message.reply_text("✨")
             await asyncio.sleep(1.8)
             await guu.delete()  # Await this line
             await update.effective_message.reply_text(
@@ -262,7 +262,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await message.reply_photo(
             photo=str(choice(START_IMG)),
             reply_markup=InlineKeyboardMarkup(GROUP_START_BTN),
-            caption="<b>I am Alive!</b>\n\n<b>Since​:</b> <code>{}</code>".format(
+            caption="<b>Robot Aktif!</b>\n\n<b>Since​:</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -342,7 +342,7 @@ async def help_button(update: Update, context: ContextTypes.DEFAULT_TYPE):
         if mod_match:
             module = mod_match.group(1)
             text = (
-                "➲ *HELP SECTION OF* *{}* :\n".format(HELPABLE[module].__mod_name__)
+                "➲ *BAGIAN BANTUAN* *{}* :\n".format(HELPABLE[module].__mod_name__)
                 + HELPABLE[module].__help__
             )
             await query.message.edit_text(
@@ -397,7 +397,7 @@ async def stats_back(update: Update, context: ContextTypes.DEFAULT_TYPE):
         mem = psutil.virtual_memory().percent
         disk = psutil.disk_usage("/").percent
         text = f"""
-𝙎𝙮𝙨𝙩𝙚𝙢 𝙨𝙩𝙖𝙩𝙨@𝙔𝙖𝙚𝙈𝙞𝙠𝙤_𝙍𝙤𝙭𝙗𝙤𝙩
+𝙎𝙮𝙨𝙩𝙚𝙢 𝙨𝙩𝙖𝙩𝙨@𝙎𝙠𝙮𝙠𝙮𝙧𝙤𝙗𝙤𝙩
 ➖➖➖➖➖➖
 UPTIME ➼ {uptime}
 CPU ➼ {cpu}%
@@ -418,9 +418,9 @@ async def gitsource_callback(update: Update, context: ContextTypes.DEFAULT_TYPE)
     await query.answer()
 
     if query.data == "git_source":
-        source_link = "https://github.com/Infamous-Hydra/YaeMiko"
+        source_link = "https://xnxxbokep"
         message_text = (
-            f"*Here is the link for the public source repo*:\n\n{source_link}"
+            f"*nih bokef dari paimon hhe*:\n\n{source_link}"
         )
 
         # Adding the inline button
@@ -452,12 +452,12 @@ async def Miko_about_callback(update: Update, context: ContextTypes.DEFAULT_TYPE
     if query.data == "Miko_":
         uptime = get_readable_time((time.time() - StartTime))
         message_text = (
-            f"➲ <b>Ai integration.</b>"
-            f"\n➲ <b>Advance management capability.</b>"
-            f"\n➲ <b>Anime bot functionality.</b>"
-            f"\n\n<b>USERS</b> » {sql.num_users()}"
-            f"\n<b>CHATS</b> » {sql.num_chats()}"
-            f"\n\n<b>Click on the buttons below for getting help and info about</b> {BOT_NAME}."
+            f"➲ <b>Integrasi Ai.</b>"
+            f"\n➲ <b>Kemampuan manajemen tingkat lanjut.</b>"
+            f"\n➲ <b>Fungsionalitas bot anime.</b>"
+            f"\n\n<b>ᴘᴇɴɢɢᴜɴᴀ</b> » {sql.num_users()}"
+            f"\n<b>ɢʀᴜᴘ</b> » {sql.num_chats()}"
+            f"\n\n<b>Klik tombol di bawah untuk mendapatkan bantuan dan info tentang</b> {BOT_NAME}."
         )
         await query.message.edit_text(
             text=message_text,
@@ -467,12 +467,12 @@ async def Miko_about_callback(update: Update, context: ContextTypes.DEFAULT_TYPE
                 [
                     [
                         InlineKeyboardButton(
-                            text="ABOUT", callback_data="Miko_support"
+                            text="ᴛᴇɴᴛᴀɴɢ ᴘᴀɪᴍᴏɴ", callback_data="Miko_support"
                         ),
-                        InlineKeyboardButton(text="COMMAND", callback_data="help_back"),
+                        InlineKeyboardButton(text="ғɪᴛᴜʀ", callback_data="help_back"),
                     ],
                     [
-                        InlineKeyboardButton(text="INSIDER", callback_data="insider_"),
+                        InlineKeyboardButton(text="ɪɴsɪᴅᴇʀ", callback_data="insider_"),
                     ],
                     [
                         InlineKeyboardButton(text="◁", callback_data="Miko_back"),
@@ -482,8 +482,8 @@ async def Miko_about_callback(update: Update, context: ContextTypes.DEFAULT_TYPE
         )
     elif query.data == "Miko_support":
         message_text = (
-            "*Our bot leverages SQL, MongoDB, Telegram, MTProto for secure and efficient operations. It resides on a high-speed server, integrates numerous APIs, ensuring quick and versatile responses to user queries.*"
-            f"\n\n*If you find any bug in {BOT_NAME} Please report it at the support chat.*"
+            "*Bot kami memanfaatkan SQL, MongoDB, Telegram, MTProto untuk operasi yang aman dan efisien. Itu berada di server berkecepatan tinggi, mengintegrasikan banyak API, memastikan respons cepat dan serbaguna terhadap pertanyaan pengguna.*"
+            f"\n\n*Jika Anda menemukan bug di {BOT_NAME} Silakan laporkan Di Grup Chat.*"
         )
         await query.message.edit_text(
             text=message_text,
@@ -493,10 +493,10 @@ async def Miko_about_callback(update: Update, context: ContextTypes.DEFAULT_TYPE
                 [
                     [
                         InlineKeyboardButton(
-                            text="SUPPORT", url=f"https://t.me/{SUPPORT_CHAT}"
+                            text="ɢʀᴜᴘ", url=f"https://t.me/{SUPPORT_CHAT}"
                         ),
                         InlineKeyboardButton(
-                            text="DEVELOPER", url=f"tg://user?id={OWNER_ID}"
+                            text="ᴏᴡɴᴇʀ", url=f"tg://user?id={OWNER_ID}"
                         ),
                     ],
                     [
