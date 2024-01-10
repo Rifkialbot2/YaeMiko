@@ -46,34 +46,34 @@ MUTE_GIFS = [
     "https://telegra.ph//file/b4faf6e390d72d286abdf.mp4",
 ]
 
-FIRST_PART_TEXT = "✨ *ʜᴇʟʟᴏ* `{}` . . ."
+FIRST_PART_TEXT = "✨ *ʜᴀʟᴏ* `{}` . . ."
 
-PM_START_TEXT = "✨ *ɪ ᴀᴍ ᴍɪᴋᴏ, ᴀ ɢᴇɴꜱʜɪɴ ɪᴍᴘᴀᴄᴛ ᴛʜᴇᴍᴇᴅ ʀᴏʙᴏᴛ ᴡʜɪᴄʜ ᴄᴀɴ ʜᴇʟᴘ ʏᴏᴜ ᴛᴏ ᴍᴀɴᴀɢᴇ ᴀɴᴅ ꜱᴇᴄᴜʀᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴡɪᴛʜ ʜᴜɢᴇ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ*"
+PM_START_TEXT = "✨ *ɴᴀᴍᴀ ᴋᴜ ᴘᴀɪᴍᴏɴ ᴀᴋᴜ ᴀᴅᴀʟᴀʜ ʀᴏʙᴏᴛ ᴍᴇɴᴇᴊᴇᴍᴇɴ ʙᴇʀᴛᴇᴍᴀ ᴋᴀɴ ᴀᴍɪɴᴇ ᴅᴀʀɪ ɢᴇɴsʜɪɴ ɪᴍᴘᴀᴄᴛ, ʏᴜ ᴀᴅᴅ ᴘᴀɪᴍᴏɴ ʀᴏʙᴏᴛ ᴋᴇ ᴅᴀʟᴀᴍ ɢʀᴜᴘ ᴍᴜ sᴇᴋᴀʀᴀɴɢ ᴛʜɴᴋs*"
 
 START_BTN = [
     [
         InlineKeyboardButton(
-            text="⇦ ADD ME ⇨",
+            text="ᴀᴅᴅ ᴘᴀɪᴍᴏɴ ᴛᴏ ɢʀᴜᴘ",
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         ),
     ],
     [
-        InlineKeyboardButton(text="HELP", callback_data="help_back"),
+        InlineKeyboardButton(text="ғɪᴛᴜʀ", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="DETAILS", callback_data="Miko_"),
-        InlineKeyboardButton(text="AI", callback_data="ai_handler"),
-        InlineKeyboardButton(text="SOURCE", callback_data="git_source"),
+        InlineKeyboardButton(text="ᴅᴇᴛᴀɪʟ", callback_data="Miko_"),
+        InlineKeyboardButton(text="ᴀɪ ʙᴏᴛ", callback_data="ai_handler"),
+        InlineKeyboardButton(text="ɢʀᴏᴜᴘ", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
     [
-        InlineKeyboardButton(text="CREATOR", url=f"tg://user?id={OWNER_ID}"),
+        InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url=f"tg://user?id={OWNER_ID}"),
     ],
 ]
 
 GROUP_START_BTN = [
     [
         InlineKeyboardButton(
-            text="⇦ ADD ME ⇨",
+            text="ᴀᴅᴅ ᴘᴀɪᴍᴏɴ ᴋᴇ ɢʀᴜᴘ",
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         ),
     ],
