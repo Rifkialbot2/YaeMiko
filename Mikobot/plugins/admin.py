@@ -1063,27 +1063,27 @@ async def admin_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 
 __help__ = """
-» /adminlist: List of admins in the chat.
+» /adminlist : Daftar admin dalam chat.
 
-➠ *Admins only:*
+➠ Admin saja:
 
-» /pin: Silently pins the message replied to. Add 'loud' or 'notify' to give notifications to users.
+» /pin : Secara diam-diam menyematkan pesan yang dibalas. Tambahkan 'loud' atau 'notify' untuk memberikan notifikasi kepada pengguna.
 
-» /unpin: Unpins the currently pinned message.
+» /unpin : Melepas pin pesan yang sedang dipasangi pin.
 
-» /unpinall: Unpins all the pinned messages. Works in topics too (only OWNER can do this).
+» /unpinall : Melepas sematan semua pesan yang dipasangi pin. Bekerja dalam topik juga (hanya PEMILIK yang dapat melakukan ini).
 
-» /invitelink: Get an invite link.
+» /invitelink : Dapatkan tautan undangan.
 
-» /promote: Promotes the user replied to.
+» /promote : Mempromosikan pengguna yang membalas.
 
-» /fullpromote: FullPromotes the user replied to.
+» /fullpromote : FullMempromosikan balasan dari pengguna.
 
-» /demote: Demotes the user replied to.
+» /demote : Menurunkan pengguna yang membalas.
 
-» /title <Title here>: Sets a custom title for an admin that the bot promoted.
+» /title <Judul di sini>: Menetapkan judul khusus untuk admin yang dipromosikan bot.
 
-» /admincache: Force refresh the admins list.
+» /admincache : Menyegarkan ulang daftar admin secara paksa.
 """
 
 # <================================================ HANDLER =======================================================>
