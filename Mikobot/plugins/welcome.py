@@ -94,7 +94,7 @@ async def draw_multiple_line_text(image, text, font, text_start_height):
 
 async def welcomepic(pic, user, chat, user_id):
     user = unidecode.unidecode(user)
-    background = Image.open("Extra/bgg.jpg")
+    background = Image.open("Extra/2024011018041769.jpg")
     background = background.resize(
         (background.size[0], background.size[1]), Image.ANTIALIAS
     )
