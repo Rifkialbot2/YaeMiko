@@ -10,39 +10,43 @@ from Mikobot import BOT_USERNAME, OWNER_ID, SUPPORT_CHAT
 
 # <============================================== CONSTANTS =========================================================>
 START_IMG = [
-    "https://telegra.ph/file/aa797e9e3b268b8c095da.jpg",
-    "https://telegra.ph/file/332d9f8cdc7ad1564c87a.jpg",
-    "https://telegra.ph/file/14ef2c1b556a60bb696c6.jpg",
+    "https://telegra.ph/file/f716e222e29e5cd701b3d.jpg",
+    "https://telegra.ph/file/8351a53ee3c648c843ee2.jpg",
+    "https://telegra.ph/file/30f31fa0a4fdd6951526a.jpg",
+
+"https://telegra.ph/file/927b0d254b6cd77dc249c.jpg",
+
+"https://telegra.ph/file/8a4df596c5c29d2c4580f.jpg",
 ]
 
-HEY_IMG = "https://telegra.ph/file/aa797e9e3b268b8c095da.jpg"
+HEY_IMG = "https://telegra.ph/file/f716e222e29e5cd701b3d.jpg"
 
 ALIVE_ANIMATION = [
-    "https://telegra.ph/file/10bfafd05cb8a4927edff.jpg",
+    "https://telegra.ph/file/927b0d254b6cd77dc249c.jpg",
 ]
 
 BAN_GIFS = [
-    "https://telegra.ph/file/9288325c28518d8cf4ada.jpg",
+    "https://telegra.ph/file/83aeb5ab51e7e742af9cd.jpg",
 ]
 
 
 KICK_GIFS = [
-    "https://telegra.ph/file/16ac083559851a92a5113.jpg",
+    "https://telegra.ph/file/43fca023276c21ada04ba.jpg",
 ]
 
 
 MUTE_GIFS = [
-    "https://telegra.ph/file/9331a9fc5b04594a36d09.jpg",
+    "https://telegra.ph/file/cc507a89bb998928643fc.jpg",
 ]
 
-FIRST_PART_TEXT = "✨ *ʜᴀʟᴏ* `{}` . . ."
+FIRST_PART_TEXT = "✨ *ᴇʏᴏ* `{}` . . ."
 
-PM_START_TEXT = "✨ *ɴᴀᴍᴀ ᴋᴜ ᴘᴀɪᴍᴏɴ ᴀᴋᴜ ᴀᴅᴀʟᴀʜ ʀᴏʙᴏᴛ ᴍᴇɴᴇᴊᴇᴍᴇɴ ʙᴇʀᴛᴇᴍᴀ ᴋᴀɴ ᴀᴍɪɴᴇ ᴅᴀʀɪ ɢᴇɴsʜɪɴ ɪᴍᴘᴀᴄᴛ, ʏᴜ ᴀᴅᴅ ᴘᴀɪᴍᴏɴ ʀᴏʙᴏᴛ ᴋᴇ ᴅᴀʟᴀᴍ ɢʀᴜᴘ ᴍᴜ sᴇᴋᴀʀᴀɴɢ ᴛʜɴᴋs*"
+PM_START_TEXT = "✨ *ᴋᴇɴᴀʟɪɴ ɴᴀᴍᴀ sᴀʏᴀ ᴋᴏʙᴏ ᴋᴀɴᴀᴇʀᴜ, sᴀʏᴀ ᴀᴅᴀʟᴀʜ ʀᴏʙᴏᴛ ᴍᴇɴᴇᴊᴇᴍᴇɴ ʙᴇʀᴛᴇᴍᴀ ᴀɴɪᴍᴇ ᴅᴀʀɪ ᴠᴛᴜʙᴇʀ, ᴀᴅᴀ ʏᴀɴɢ ʙɪsᴀ ᴋᴏʙᴏ ʙᴀɴᴛᴜ?*"
 
 START_BTN = [
     [
         InlineKeyboardButton(
-            text="➕ ᴀᴅᴅ ᴘᴀɪᴍᴏɴ ➕",
+            text="➕ ᴀᴅᴅ ᴋᴏʙᴏ ᴋᴇ ɢʀᴜᴘ ➕",
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         ),
     ],
@@ -62,7 +66,7 @@ START_BTN = [
 GROUP_START_BTN = [
     [
         InlineKeyboardButton(
-            text="ᴀᴅᴅ ᴘᴀɪᴍᴏɴ ᴋᴇ ɢʀᴜᴘ",
+            text="ᴀᴅᴅ ᴋᴏʙᴏ ᴋᴇ ɢʀᴜᴘ",
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         ),
     ],
@@ -74,19 +78,19 @@ GROUP_START_BTN = [
 
 ALIVE_BTN = [
     [
-        ib(text="UPDATES", url="https://t.me/Hydra_Updates"),
-        ib(text="SUPPORT", url="https://t.me/hydraXsupport"),
+        ib(text="UPDATES", url="https://t.me/skyskykyy"),
+        ib(text="SUPPORT", url="https://t.me/wibuhouse"),
     ],
     [
         ib(
-            text="ᴀᴅᴅ ᴘᴀɪᴍᴏɴ",
+            text="ᴀᴅᴅ ᴋᴏʙᴏ ᴋᴀɴᴀᴇʀᴜ",
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         ),
     ],
 ]
 
 HELP_STRINGS = """
-🫧 *𝐏ᴀɪᴍᴏɴ 𝐁ᴏᴛ* 🫧
+🫧 *𝐊𝐨𝐛𝐨 𝐊𝐚𝐧𝐚𝐞𝐫𝐮 𝐁𝐨𝐭* 🫧
 
 ☉ *Di sini, Anda akan menemukan daftar semua perintah yang tersedia*.
 
