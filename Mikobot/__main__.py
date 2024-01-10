@@ -71,9 +71,9 @@ async def ai_handler_callback(update: Update, context: ContextTypes.DEFAULT_TYPE
         await query.message.edit_text(
             "🧠 *Fungsi Kecerdasan Buatan :*:\n\n"
             "Semua Perintah::\n"
-            "➽ /askgpt <write query>: Chatbot yang menggunakan GPT untuk merespons pertanyaan pengguna.\n\n"
-            "➽ /palm <write prompt>: Melakukan pencarian Palm menggunakan chatbot.\n\n"
-            "➽ /upscale <reply to image>: Meningkatkan kualitas gambar Anda.",
+            "➽ /askgpt <menulis permintaan>: Chatbot yang menggunakan GPT untuk merespons pertanyaan pengguna.\n\n"
+            "➽ /palm <tulis perintah> prompt>: Melakukan pencarian Palm menggunakan chatbot.\n\n"
+            "➽ /upscale <reply gambar mu>: Meningkatkan kualitas gambar Anda.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
