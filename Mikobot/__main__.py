@@ -249,7 +249,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 parse_mode=ParseMode.MARKDOWN,
             )
             await asyncio.sleep(0.2)
-            guu = await update.effective_message.reply_text("✨")
+            guu = await update.effective_message.reply_text("☁️")
             await asyncio.sleep(1.8)
             await guu.delete()  # Await this line
             await update.effective_message.reply_text(
@@ -397,7 +397,7 @@ async def stats_back(update: Update, context: ContextTypes.DEFAULT_TYPE):
         mem = psutil.virtual_memory().percent
         disk = psutil.disk_usage("/").percent
         text = f"""
-𝙎𝙮𝙨𝙩𝙚𝙢 𝙨𝙩𝙖𝙩𝙨@𝙎𝙠𝙮𝙠𝙮𝙧𝙤𝙗𝙤𝙩
+𝙎𝙮𝙨𝙩𝙚𝙢 𝙨𝙩𝙖𝙩𝙨@𝙎𝐲𝐭𝐫𝐢𝐱𝐬𝐳𝐛𝐨𝐭
 ➖➖➖➖➖➖
 UPTIME ➼ {uptime}
 CPU ➼ {cpu}%
@@ -420,7 +420,7 @@ async def gitsource_callback(update: Update, context: ContextTypes.DEFAULT_TYPE)
     if query.data == "git_source":
         source_link = "https://xnxxbokep"
         message_text = (
-            f"*nih bokef dari paimon hhe*:\n\n{source_link}"
+            f"*nih bokef dari kobo hhe*:\n\n{source_link}"
         )
 
         # Adding the inline button
@@ -436,7 +436,7 @@ async def gitsource_callback(update: Update, context: ContextTypes.DEFAULT_TYPE)
 
 
 async def repo(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    source_link = "https://github.com/Infamous-Hydra/YaeMiko"
+    source_link = "https://xnxx"
     message_text = f"*Here is the link for the public source repo*:\n\n{source_link}"
 
     await context.bot.send_message(
@@ -540,12 +540,12 @@ async def get_help(update: Update, context: ContextTypes.DEFAULT_TYPE):
             )
             return
         await update.effective_message.reply_text(
-            "» Choose an option for getting help.",
+            "» Pilih opsi untuk mendapatkan bantuan.",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="OPEN IN PM",
+                            text="Buka Di PM",
                             url="https://t.me/{}?start=help".format(
                                 context.bot.username
                             ),
@@ -553,7 +553,7 @@ async def get_help(update: Update, context: ContextTypes.DEFAULT_TYPE):
                     ],
                     [
                         InlineKeyboardButton(
-                            text="OPEN HERE",
+                            text="Buka Disini",
                             callback_data="help_back",
                         )
                     ],
