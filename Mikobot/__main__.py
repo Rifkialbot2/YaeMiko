@@ -467,7 +467,7 @@ async def Miko_about_callback(update: Update, context: ContextTypes.DEFAULT_TYPE
                 [
                     [
                         InlineKeyboardButton(
-                            text="ᴛᴇɴᴛᴀɴɢ ᴘᴀɪᴍᴏɴ", callback_data="Miko_support"
+                            text="ᴛᴇɴᴛᴀɴɢ ᴋᴏʙᴏ", callback_data="Miko_support"
                         ),
                         InlineKeyboardButton(text="ғɪᴛᴜʀ", callback_data="help_back"),
                     ],
