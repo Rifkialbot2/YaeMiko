@@ -182,20 +182,14 @@ function = dispatcher.add_handler
 
 # <================================================ BOOT MESSAGE=======================================================>
 ALIVE_MSG = """
-💫 *MY SYSTEM IS STARTING, PLEASE WAIT FOR SOMETIME TO COMPLETE BOOT!*
+💫 *SISTEM SAYA MULAI, TOLONG TUNGGU SAMPAI SELESAI BOOT!*
 
 
-*IF COMMANDS DON'T WORK CHECK THE LOGS*
+*JIKA PERINTAH TIDAK BEKERJA, PERIKSA LOG*
 """
 
 ALIVE_IMG = [
-    "https://telegra.ph/file/40b93b46642124605e678.jpg",
-    "https://telegra.ph/file/01a2e0cd1b9d03808c546.jpg",
-    "https://telegra.ph/file/ed4385c26dcf6de70543f.jpg",
-    "https://telegra.ph/file/33a8d97739a2a4f81ddde.jpg",
-    "https://telegra.ph/file/cce9038f6a9b88eb409b5.jpg",
-    "https://telegra.ph/file/262c86393730a609cdade.jpg",
-    "https://telegra.ph/file/33a8d97739a2a4f81ddde.jpg",
+    "https://telegra.ph/file/be99d6cd1b935bac36214.jpg",
 ]
 # <=======================================================================================================>
 
