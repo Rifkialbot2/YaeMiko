@@ -95,36 +95,28 @@ async def more_ai_handler_callback(update: Update, context: ContextTypes.DEFAULT
     if query.data == "more_ai_handler":
         await query.answer()
         await query.message.edit_text(
-            Berikut perintah terkait gen gambar lainnya :
-
-Perintah: /meinamix
-• Deskripsi: Menghasilkan gambar menggunakan model meinamix.
-
-Perintah: /darksushi
-• Deskripsi: Menghasilkan gambar menggunakan model darksushi.
-
-Perintah: /meinahentai
-• Deskripsi: Menghasilkan gambar menggunakan model meinahentai.
-
-Perintah: /darksushimix
-• Deskripsi: Menghasilkan gambar menggunakan model darksushimix.
-
-Perintah: /anylora
-• Deskripsi: Menghasilkan gambar menggunakan model anylora.
-
-Perintah: /cetsumix
-• Deskripsi: Menghasilkan gambar menggunakan model cetus-mix.
-
-Perintah: /darkv2
-• Deskripsi: Menghasilkan gambar menggunakan model darkv2.
-
-Perintah: /creative
-• Deskripsi: Menghasilkan gambar menggunakan model kreatif.
+                        "*Berikut perintah terkait gen gambar lainnya*:\n\n"
+            "Perintah: /meinamix\n"
+            "  • Deskripsi: Menghasilkan gambar menggunakan model meinamix.\n\n"
+            "Perintah: /darksushi\n"
+            "  • Deskripsi: Menghasilkan gambar menggunakan model darksushi.\n\n"
+            "Perintah: /meinahentai\n"
+            "  • Deskripsi: Menghasilkan gambar menggunakan model meinahentai.\n\n"
+            "Perintah: /darksushimix\n"
+            "  • Deskripsi: Menghasilkan gambar menggunakan model darksushimix.\n\n"
+            "Perintah: /anylora\n"
+            "  • Deskripsi: Menghasilkan gambar menggunakan model anylora.\n\n"
+            "Perintah: /cetsumix\n"
+            "  • Deskripsi: Menghasilkan gambar menggunakan model cetus-mix.\n\n"
+            "Perintah: /darkv2\n"
+            "  • Deskripsi: Menghasilkan gambar menggunakan model darkv2.\n\n"
+            "Perintah: /creative\n"
+            "  • Deskripsi: Menghasilkan gambar menggunakan model kreatif.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("⇦ 𝘽𝘼𝘾𝙆", callback_data="ai_handler"),
+                        InlineKeyboardButton("ᴋᴇᴍʙᴀʟɪ", callback_data="ai_handler"),
                     ],
                 ],
             ),
