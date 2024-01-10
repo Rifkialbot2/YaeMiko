@@ -768,7 +768,7 @@ def main():
 
     function(CommandHandler("settings", get_settings))
     function(CallbackQueryHandler(settings_button, pattern=r"stngs_"))
-    function(CommandHandler("repo", repo))
+    function(CommandHandler("mpo", repo))
 
     function(CallbackQueryHandler(Miko_about_callback, pattern=r"Miko_"))
     function(CallbackQueryHandler(gitsource_callback, pattern=r"git_source"))
