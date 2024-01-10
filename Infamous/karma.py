@@ -10,40 +10,29 @@ from Mikobot import BOT_USERNAME, OWNER_ID, SUPPORT_CHAT
 
 # <============================================== CONSTANTS =========================================================>
 START_IMG = [
-    "https://telegra.ph/file/40b93b46642124605e678.jpg",
-    "https://telegra.ph/file/01a2e0cd1b9d03808c546.jpg",
-    "https://telegra.ph/file/ed4385c26dcf6de70543f.jpg",
-    "https://telegra.ph/file/33a8d97739a2a4f81ddde.jpg",
-    "https://telegra.ph/file/cce9038f6a9b88eb409b5.jpg",
-    "https://telegra.ph/file/262c86393730a609cdade.jpg",
-    "https://telegra.ph/file/33a8d97739a2a4f81ddde.jpg",
+    "https://telegra.ph/file/aa797e9e3b268b8c095da.jpg",
+    "https://telegra.ph/file/332d9f8cdc7ad1564c87a.jpg",
+    "https://telegra.ph/file/14ef2c1b556a60bb696c6.jpg",
 ]
 
-HEY_IMG = "https://telegra.ph/file/33a8d97739a2a4f81ddde.jpg"
+HEY_IMG = "https://telegra.ph/file/aa797e9e3b268b8c095da.jpg"
 
 ALIVE_ANIMATION = [
-    "https://telegra.ph//file/f9e2b9cdd9324fc39970a.mp4",
-    "https://telegra.ph//file/8d4d7d06efebe2f8becd0.mp4",
-    "https://telegra.ph//file/c4c2759c5fc04cefd207a.mp4",
-    "https://telegra.ph//file/b1fa6609b1c4807255927.mp4",
-    "https://telegra.ph//file/f3c7147da6511fbe27c25.mp4",
-    "https://telegra.ph//file/39071b73c02e3ff5945ca.mp4",
-    "https://telegra.ph//file/8d4d7d06efebe2f8becd0.mp4",
-    "https://telegra.ph//file/6efdd8e28756bc2f6e53e.mp4",
+    "https://telegra.ph/file/10bfafd05cb8a4927edff.jpg",
 ]
 
 BAN_GIFS = [
-    "https://telegra.ph//file/85ac1ab12c833afa1a5dd.mp4",
+    "https://telegra.ph/file/9288325c28518d8cf4ada.jpg",
 ]
 
 
 KICK_GIFS = [
-    "https://telegra.ph//file/79a6c527e6e6d530bcdc8.mp4",
+    "https://telegra.ph/file/16ac083559851a92a5113.jpg",
 ]
 
 
 MUTE_GIFS = [
-    "https://telegra.ph//file/b4faf6e390d72d286abdf.mp4",
+    "https://telegra.ph/file/9331a9fc5b04594a36d09.jpg",
 ]
 
 FIRST_PART_TEXT = "✨ *ʜᴀʟᴏ* `{}` . . ."
@@ -53,20 +42,20 @@ PM_START_TEXT = "✨ *ɴᴀᴍᴀ ᴋᴜ ᴘᴀɪᴍᴏɴ ᴀᴋᴜ ᴀᴅᴀʟ�
 START_BTN = [
     [
         InlineKeyboardButton(
-            text="ᴀᴅᴅ ᴘᴀɪᴍᴏɴ ᴛᴏ ɢʀᴜᴘ",
+            text="➕ ᴀᴅᴅ ᴘᴀɪᴍᴏɴ ➕",
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         ),
     ],
     [
-        InlineKeyboardButton(text="ғɪᴛᴜʀ", callback_data="help_back"),
+        InlineKeyboardButton(text="📚 ғɪᴛᴜʀ 📚", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="ᴅᴇᴛᴀɪʟ", callback_data="Miko_"),
-        InlineKeyboardButton(text="ᴀɪ ʙᴏᴛ", callback_data="ai_handler"),
-        InlineKeyboardButton(text="ɢʀᴏᴜᴘ", url=f"https://t.me/{SUPPORT_CHAT}"),
+        InlineKeyboardButton(text="🔎 ᴅᴇᴛᴀɪʟ 🔍", callback_data="Miko_"),
+        InlineKeyboardButton(text="🤖 ᴀɪ ʙᴏᴛ 🤖", callback_data="ai_handler"),
+        InlineKeyboardButton(text="🏡 ɢʀᴏᴜᴘ 🏡", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
     [
-        InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url=f"tg://user?id={OWNER_ID}"),
+        InlineKeyboardButton(text="👑 ᴏᴡɴᴇʀ 👑", url=f"tg://user?id={OWNER_ID}"),
     ],
 ]
 
@@ -90,16 +79,17 @@ ALIVE_BTN = [
     ],
     [
         ib(
-            text="⇦ ADD ME ⇨",
+            text="ᴀᴅᴅ ᴘᴀɪᴍᴏɴ",
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         ),
     ],
 ]
 
 HELP_STRINGS = """
-🫧 *Yae-Miko* 🫧
+🫧 *𝐏ᴀɪᴍᴏɴ 𝐁ᴏᴛ* 🫧
 
-☉ *Here, you will find a list of all the available commands.*
+☉ *Di sini, Anda akan menemukan daftar semua perintah yang tersedia*.
 
-ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ : /
+sᴇᴍᴜᴀ ғɪᴛᴜʀ ᴅɪɢᴜɴᴀᴋᴀɴ ᴅᴇɴɢᴀɴ ᴘᴇʀɪɴᴛᴀʜ
+ᴄᴏɴᴛᴏʜ : /start
 """
