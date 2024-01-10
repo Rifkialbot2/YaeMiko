@@ -49,7 +49,7 @@ async def afk(update: Update, context: ContextTypes.DEFAULT_TYPE):
             )
         else:
             await update.effective_message.reply_text(
-                "➲ {} is now away!{}".format(fname, notice),
+                "➲ {} sekarang sedang pergi!{}".format(fname, notice),
             )
     except BadRequest:
         pass
@@ -74,13 +74,13 @@ async def no_longer_afk(update: Update, context: ContextTypes.DEFAULT_TYPE):
         firstname = update.effective_user.first_name
         try:
             options = [
-                "➲ {} is here!",
-                "➲ {} is back!",
-                "➲ {} is now in the chat!",
-                "➲ {} is awake!",
-                "➲ {} is back online!",
-                "➲ {} is finally here!",
-                "➲ Welcome back! {}",
+                "➲ {} di sini!",
+                "➲ {} kembali!",
+                "➲ {} sekarang di chat!",
+                "➲ {} sudah bangun!",
+                "➲ {} kembali daring!",
+                "➲ {} akhirnya tiba di sini!",
+                "➲ Selamat Datang kembali! {}",
             ]
             chosen_option = random.choice(options)
             await update.effective_message.reply_text(
@@ -160,14 +160,14 @@ async def check_afk(
         time = humanize.naturaldelta(datetime.now() - user.time)
 
         if not user.reason:
-            res = "➲ {} is afk.\n\n➦ Last seen {} ago.".format(
+            res = "➲ {} sedang afk.\n\n➦ Terakhir terlihat {} yang lalu.".format(
                 fst_name,
                 time,
             )
             await update.effective_message.reply_text(res)
         else:
             res = (
-                "➲ {} is afk.\n\n➦ Reason: <code>{}</code>\n➦ Last seen {} ago.".format(
+                "➲ {} sedang afk.\n\n➦ Alasan: <code>{}</code>\n➦ Terakhir terlihat {} yang lalu.".format(
                     html.escape(fst_name),
                     html.escape(user.reason),
                     time,
@@ -180,11 +180,11 @@ async def check_afk(
 
 
 __help__ = """
-» /afk <reason>*:* mark yourself as AFK (away from keyboard).
+» /afk <alasan>*:* tandai diri Anda sebagai AFK (jauh dari keyboard).
 
-» brb , !afk <reason>*:* same as the afk command - but not a command.
+» brb , !afk <alasan>*:* sama dengan perintah afk - tetapi bukan perintah.
 
-➠ *When marked as AFK, any mentions will be replied to with a message to say you're not available!*
+➠ *Ketika ditandai sebagai AFK, setiap penyebutan akan dibalas dengan pesan yang menyatakan bahwa Anda tidak tersedia!*
 """
 
 # <================================================ HANDLER =======================================================>
