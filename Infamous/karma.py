@@ -13,9 +13,7 @@ START_IMG = [
     "https://telegra.ph/file/f716e222e29e5cd701b3d.jpg",
     "https://telegra.ph/file/8351a53ee3c648c843ee2.jpg",
     "https://telegra.ph/file/30f31fa0a4fdd6951526a.jpg",
-
 "https://telegra.ph/file/927b0d254b6cd77dc249c.jpg",
-
 "https://telegra.ph/file/8a4df596c5c29d2c4580f.jpg",
 ]
 
