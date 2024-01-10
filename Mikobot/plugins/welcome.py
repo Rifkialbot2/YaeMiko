@@ -1174,37 +1174,37 @@ async def user_button(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 
 WELC_MUTE_HELP_TXT = (
-    "You can get the bot to mute new people who join your group and hence prevent spambots from flooding your group. "
-    "The following options are possible:\n"
-    "• `/welcomemute soft`: Restricts new members from sending media for 24 hours.\n"
-    "• `/welcomemute strong`: Mutes new members until they tap on a button, thereby verifying they're human.\n"
-    "• `/welcomemute off`: Turns off welcomemute.\n"
-    "Note: Strong mode kicks a user from the chat if they don't verify in 120 seconds. They can always rejoin though."
+    "Anda bisa mendapatkan bot untuk membungkam orang baru yang bergabung dengan grup Anda dan karenanya mencegah robot spam membanjiri grup Anda. "
+    "Opsi berikut ini dimungkinkan:\n"
+    "• `/welcomemute soft`: Membatasi anggota baru mengirimkan media selama 24 jam.\n"
+    "• `/welcomemute strong`: Membisukan anggota baru hingga mereka mengetuk tombol, sehingga memverifikasi bahwa mereka adalah manusia.\n"
+    "• `/welcomemute off`: Mematikan Welcomemute.\n"
+    "Catatan: Mode kuat mengeluarkan pengguna dari obrolan jika mereka tidak memverifikasi dalam 120 detik. Namun mereka selalu dapat bergabung kembali."
 )
 
 
 @check_admin(is_user=True)
 async def welcome_help(update: Update, context: ContextTypes.DEFAULT_TYPE):
     WELC_HELP_TXT = (
-        "Your group's welcome/goodbye messages can be personalized in multiple ways. If you want the messages"
-        " to be individually generated, like the default welcome message is, you can use these variables:\n"
-        " • `{first}`: This represents the user's *first* name\n"
-        " • `{last}`: This represents the user's *last* name. Defaults to *first name* if the user has no last name.\n"
-        " • `{fullname}`: This represents the user's *full* name. Defaults to *first name* if the user has no last name.\n"
-        " • `{username}`: This represents the user's *username*. Defaults to a *mention* of the user's"
-        " first name if they have no username.\n"
-        " • `{mention}`: This simply *mentions* a user - tagging them with their first name.\n"
-        " • `{id}`: This represents the user's *ID*\n"
-        " • `{count}`: This represents the user's *member number*.\n"
-        " • `{chatname}`: This represents the *current chat name*.\n"
-        "\nEach variable must be surrounded by `{}` to be replaced.\n"
-        "Welcome messages also support markdown, so you can make any elements bold/italic/code/links. "
-        "Buttons are also supported, so you can make your welcomes look awesome with some nice intro buttons."
-        "\nTo create a button linking to your rules, use this: `[rules](buttonurl://t.me/"
-        f"{context.bot.username}?start=group_id)`. Simply replace `group_id` with your group's ID,"
-        " which can be obtained via /id, and you're good to go. Note that group IDs are usually preceded by a `-` sign, so please don't remove it."
-        " You can even set images/gifs/videos/voice messages as the welcome message by replying to the desired media,"
-        " and calling `/setwelcome`."
+        "Pesan selamat datang/selamat tinggal grup Anda dapat dipersonalisasi dengan berbagai cara. Jika Anda menginginkan pesannya"
+        " untuk dibuat secara individual, seperti pesan selamat datang default, Anda dapat menggunakan variabel berikut:\n"
+        " • `{first}`: Ini mewakili pengguna *pertama* nama\n"
+        " • `{last}`: Ini mewakili pengguna *terakhir* nama. Defaultnya adalah *nama depan* jika pengguna tidak memiliki nama belakang.\n"
+        " • `{fullname}`: Ini mewakili pengguna *full* nama. Defaultnya adalah *nama depan* jika pengguna tidak memiliki nama belakang.\n"
+        " • `{username}`: Ini mewakili pengguna *username*. Defaultnya adalah *sebutan* milik pengguna"
+" nama depan jika mereka tidak memiliki nama pengguna.\n"
+" • {mention} : Ini hanya *menyebut* pengguna - menandai mereka dengan nama depannya.\n"
+" • {id} : Ini mewakili *ID*\n pengguna"
+" • {count} : Ini mewakili *nomor anggota* pengguna.\n"
+" • {chatname} : Ini mewakili *nama chat saat ini*.\n"
+        "\n Setiap variabel harus dikelilingi oleh `{}` untuk diganti.\n"
+        "Pesan selamat datang juga mendukung penurunan harga, sehingga Anda dapat membuat elemen apa pun menjadi tebal/miring/kode/tautan."
+        "Tombol juga didukung, sehingga Anda dapat membuat sambutan Anda terlihat keren dengan beberapa tombol intro yang bagus."
+        "\n Untuk membuat tombol yang tertaut ke aturan Anda, gunakan ini: `[rules](buttonurl://t.me/"
+        f"{context.bot.username}?start=group_id)`. Ganti saja `group_id` dengan ID grup Anda,"
+        " yang dapat diperoleh melalui /id, dan Anda siap melakukannya. Perhatikan bahwa ID grup biasanya diawali dengan tanda `-`, jadi mohon jangan menghapusnya."
+        " Anda bahkan dapat mengatur gambar/gif/video/pesan suara sebagai pesan selamat datang dengan membalas media yang diinginkan,"
+        " dan memanggil `/setwelcome`."
     )
 
     await update.effective_message.reply_text(
