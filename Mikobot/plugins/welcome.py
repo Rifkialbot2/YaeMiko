@@ -67,7 +67,7 @@ VERIFIED_USER_WAITLIST = {}
 
 
 # <================================================ TEMPLATE WELCOME FUNCTION =======================================================>
-async def circle(pfp, size=(259, 259)):
+async def circle(pfp, size=(275, 275)):
     pfp = pfp.resize(size, Image.ANTIALIAS).convert("RGBA")
     bigsize = (pfp.size[0] * 3, pfp.size[1] * 3)
     mask = Image.new("L", bigsize, 0)
@@ -101,7 +101,7 @@ async def welcomepic(pic, user, chat, user_id):
     pfp = Image.open(pic).convert("RGBA")
     pfp = await circle(pfp, size=(270, 270))
     pfp_x = 55
-    pfp_y = (background.size[1] - pfp.size[1]) // 2 + 38
+    pfp_y = (background.size[1] - pfp.size[1]) // 2 + 40
     draw = ImageDraw.Draw(background)
     font = ImageFont.truetype("Extra/Calistoga-Regular.ttf", 42)
     text_width, text_height = draw.textsize(f"{user} [{user_id}]", font=font)
@@ -559,7 +559,7 @@ async def new_member(update: Update, context: ContextTypes.DEFAULT_TYPE):
                             [
                                 [
                                     InlineKeyboardButton(
-                                        text="YES, I'M HUMAN",
+                                        text="YA, SAYA MANUSIA",
                                         callback_data="user_join_({})".format(
                                             new_mem.id
                                         ),
