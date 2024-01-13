@@ -99,7 +99,7 @@ async def welcomepic(pic, user, chat, user_id):
         (background.size[0], background.size[1]), Image.ANTIALIAS
     )
     pfp = Image.open(pic).convert("RGBA")
-    pfp = await circle(pfp, size=(259, 259))
+    pfp = await circle(pfp, size=(270, 270))
     pfp_x = 55
     pfp_y = (background.size[1] - pfp.size[1]) // 2 + 38
     draw = ImageDraw.Draw(background)
