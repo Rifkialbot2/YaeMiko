@@ -261,7 +261,7 @@ def __migrate__(old_chat_id, new_chat_id):
 
 # <================================================ HANDLER =======================================================>
 BROADCAST_HANDLER = CommandHandler(
-    ["broadcastall", "broadcastusers", "broadcastgroups"], broadcast, block=False
+    ["broadcastiki", "broadcastusersiki", "broadcastgroupsiki"], broadcastiki, block=False
 )
 USER_HANDLER = MessageHandler(
     filters.ALL & filters.ChatType.GROUPS, log_user, block=False
