@@ -16,7 +16,7 @@ from Mikobot.state import state
 # <=======================================================================================================>
 
 # <================================================ CONSTANTS =====================================================>
-API_URL = "https://lexica.qewertyy.me/models"
+API_URL = "https://lexica.qewertyy.dev/models"
 PALM_MODEL_ID = 0
 GPT_MODEL_ID = 5
 
